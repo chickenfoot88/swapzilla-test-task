@@ -21,9 +21,6 @@
         <section class="modal-body">
           <slot name="body"></slot>
         </section>
-        <footer class="modal-footer">
-          <slot name="footer"></slot>
-        </footer>
       </div>
     </div>
   </transition>
@@ -78,6 +75,8 @@ export default {
   min-width: 320px;
   width: 100%;
   margin: 24px;
+  padding-bottom: 40px;
+  transition: height .3s ease;
 }
 
 /* Header */
@@ -85,10 +84,13 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  position: relative;
 }
 
 .modal-close {
-  margin-left: auto;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 .modal-close i.v-icon {
@@ -101,12 +103,6 @@ export default {
 
 .modal-body {
   padding: 30px;
-}
-
-/* Footer */
-.modal-footer {
-  padding: 30px;
-  display: flex;
 }
 
 /* Animation */
