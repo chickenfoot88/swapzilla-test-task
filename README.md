@@ -7,6 +7,8 @@ Test task form SwapZilla company for the position of frontend developer on vue.j
 * [Material Design Icons](https://materialdesignicons.com/) - icon collection.
 ## Design
 * [Figma](https://www.figma.com/file/kejKi11BhMWiLcxa0fZFA8/SwapZilla?node-id=300%3A0)
+## Preview
+![image](https://raw.githubusercontent.com/chickenfoot88/swapzilla-test-task/main/src/assets/preview.png)
 ## Project setup
 ```
 npm install
