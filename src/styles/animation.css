@@ -8,13 +8,3 @@
 .fade-leave-active {
   transition: opacity 0.3s ease-out;
 }
-
-/* Expand */
-/* .expand-enter-active,
-.expand-leave-active {
-  transition-property: opacity, height;
-}
-.expand-enter,
-.expand-leave-to {
-  opacity: 0;
-} */
