@@ -18,9 +18,27 @@
       placeholder="Withdraw amount"
       class="mb-6"
     />
-    <v-btn class="text-normal font-weight-bold pa-6" color="primary" depressed>
+    <v-btn
+      class="text-normal font-weight-bold pa-6"
+      color="primary"
+      depressed
+      @click="notification = true"
+    >
       Withdraw
     </v-btn>
+    <v-snackbar
+      v-model="notification"
+      timeout="2000"
+      light
+      top
+      width="100px"
+      max-width="100px"
+    >
+      <div class="d-flex">
+        <v-icon class="mr-auto" color="success">done</v-icon>
+        <span class="mr-auto">Funds were withdrawn</span>
+      </div>
+    </v-snackbar>
   </div>
 </template>
 <script>
@@ -28,6 +46,7 @@ export default {
   name: 'Withdraw',
   data() {
     return {
+      notification: false,
       selectedExchange: '',
       selectedCurrency: '',
       WithdrawAmount: '',

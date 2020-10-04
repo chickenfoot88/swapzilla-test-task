@@ -15,9 +15,23 @@
 
     <qr-code class="mb-6"></qr-code>
 
-    <v-btn class="text-normal font-weight-bold pa-6" color="primary" depressed>
+    <v-btn class="text-normal font-weight-bold pa-6" color="primary" depressed @click="notification = true">
       Copy
     </v-btn>
+
+    <v-snackbar
+      v-model="notification"
+      timeout="1500"
+      light
+      top
+      width="100px"
+      max-width="100px"
+    >
+      <div class="d-flex">
+        <v-icon class="mr-auto" color="success">assignment_turned_in</v-icon>
+        <span class="mr-auto">QR code copied</span>
+      </div>
+    </v-snackbar>
   </div>
 </template>
 <script>
@@ -30,6 +44,7 @@ export default {
   },
   data() {
     return {
+      notification: false,
       selectedExchange: '',
       selectedCurrency: '',
       cryptoExchanges: [
