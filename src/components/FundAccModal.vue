@@ -1,5 +1,5 @@
 <template>
-  <base-modal v-if="isModalVisible" max-width="780" @close="closeModal" v-touch:tap="swipeHandler">
+  <base-modal v-if="isModalVisible" max-width="780" @close="closeModal">
     <template slot="header">
       <base-tabs :tabs-array="tabs" :selected-tab-name.sync="tab" />
     </template>
