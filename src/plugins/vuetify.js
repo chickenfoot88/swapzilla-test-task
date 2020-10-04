@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import Vuetify, { VSnackbar, VBtn, VIcon } from 'vuetify/lib';
 import 'vuetify/src/styles/main.sass';
-
-Vue.use(Vuetify);
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 const options = {
   icons: {
