@@ -62,6 +62,7 @@ export default {
   margin-right: 40px;
   padding-bottom: 14px;
   transition: color 0.3s ease-out;
+  position: relative;
 }
 
 .base-tabs ul li a::after {
@@ -79,10 +80,16 @@ export default {
 .base-tabs ul li.is-active a {
   color: var(--v-dark-base);
   position: relative;
-  /* border-bottom: 4px solid var(--v-dark-base); */
 }
 
 .base-tabs ul li.is-active a::after {
   opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .base-tabs ul li a {
+    font-size: 14px;
+    margin-right: 12px;
+  }
 }
 </style>
