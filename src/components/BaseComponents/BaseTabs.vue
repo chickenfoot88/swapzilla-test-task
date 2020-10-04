@@ -73,7 +73,7 @@ export default {
   position: absolute;
   right: 0;
   width: 100%;
-  transition: all 0.8s ease-out;
+  transition: all 0.4s ease-out;
   opacity: 0;
 }
 
