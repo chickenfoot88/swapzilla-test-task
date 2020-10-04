@@ -4,6 +4,7 @@ import vuetify from './plugins/vuetify'
 import './global-components'
 import '@/styles/utility.css'
 import '@/styles/animation.css'
+import '@/styles/reset.css'
 
 Vue.config.productionTip = false
 
