@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <transition name="modal-fade">
     <div
       class="modal-backdrop"
@@ -6,13 +6,13 @@
       aria-labelledby="modalTitle"
       aria-describedby="modalDescription"
     >
-      <div class="modal" :style="{ maxWidth: `${maxWidth}px` }">
+      <div class="modal" :style="{ maxWidth: `${props.maxWidth}px` }">
         <header class="modal-header">
           <slot name="header"></slot>
           <button
             class="modal-close"
             type="button"
-            @click="close"
+            @click="$emit('close')"
             aria-label="Close modal"
           >
             <v-icon large>close</v-icon>
@@ -32,14 +32,6 @@ export default {
     maxWidth: {
       type: String,
       default: '320',
-    },
-  },
-  data() {
-    return {}
-  },
-  methods: {
-    close() {
-      this.$emit('close')
     },
   },
 }

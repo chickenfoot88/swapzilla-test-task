@@ -1,5 +1,5 @@
-<template>
-  <div class="base-chip" :class="[bgColor, `${textColor}--text`]">
+<template functional>
+  <div class="base-chip" :class="[props.bgColor, `${props.textColor}--text`]">
     <slot />
   </div>
 </template>
@@ -19,10 +19,7 @@ export default {
         return 'dark'
       },
     },
-  },
-  data() {
-    return {}
-  },
+  }
 }
 </script>
 <style>
